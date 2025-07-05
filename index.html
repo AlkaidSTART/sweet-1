@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="unload=*">
+    <title>Sweet</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="preload" href="../css/index.css" as="style">
+    <link rel="preload" href="../css/font.css" as="style">
+    <link rel="preload" href="../ziliao/audio/Sweet.mp3" as="audio">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in-char {
+            display: inline-block;
+            opacity: 0;
+            animation: fadeIn 0.3s ease-in-out forwards;
+        }
+        #box1 {
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="body">
+        <canvas id="rain"></canvas>
+        <audio src="../ziliao/audio/Sweet.mp3" id="audio"></audio>
+        <div class="container">
+            <button class="btn"><span>点击</span></button>
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+        </div>
+    </div>
+    <script src="../Js/index.js"></script>
+    <script src="../Js/cartoon.js"></script>
+    <script src="../Js/autio.js"></script>
+    <script src="../Js/demo.js"></script>
+</body>
+
+</html>
